@@ -91,7 +91,14 @@ string gaderypoluki2(string clearText)
 }
 
 //tekst do zaszyfrowania
-string clearText = "GADERYPOLUKI";
+string clearText = "";
+Console.WriteLine("Proszę podaj tekst do zaszyfrowania: ");
+clearText = Console.ReadLine() ?? "";
+
+//zmień na wielkie litery
+clearText= clearText.ToUpper();
+
+
 //zaszyfruj używając funkcji
 string cypherText = gaderypuluki(clearText);
 
