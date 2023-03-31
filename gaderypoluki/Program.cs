@@ -3,9 +3,10 @@
 string gaderypuluki(string clearText)
 {
     //zmienna do przechowywania zaszyfrowanego tekstu
-    string cypherText = "";
+    //zapisujemy czysty tekst do dalszego szyfrowania
+    string cypherText = clearText;
     //zamien G na A i zapisz do nowej zmiennej
-    cypherText = clearText.Replace('G', '@');
+    cypherText = cypherText.Replace('G', '@');
     //wez juz czesciowo zaszyfrowany tekst i zamien A na G\
     //użyj znaku pośredniego  aby zapobiec dwukrotnej zmianie jednej litery
     cypherText = cypherText.Replace('A', 'G');
